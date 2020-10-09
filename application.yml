@@ -1,0 +1,29 @@
+jms:
+  topic: myTopic
+artemis:
+    host: localhost
+    mode: native
+    password: password
+    port: 61616
+    user: admin
+ jms:
+    pub-sub-domain: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 200MB
+      max-request-size: 215MB
+ datasource:
+    password: password
+    username: root
+logging:
+    org:
+      hibernate:
+        SQL: INFO
